@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "I s s3",
+  "applicationTitle": "I s s3",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-s-s3",
+      "caption": "ISS3",
+      "title": "ISS3",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s3-рабочее-место-l",
+          "menuName": null,
+          "caption": "Рабочее место",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s3-пользователь-l",
+          "menuName": null,
+          "caption": "Пользователь",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

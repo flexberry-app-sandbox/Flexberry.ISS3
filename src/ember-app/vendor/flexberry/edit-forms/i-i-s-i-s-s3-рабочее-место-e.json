@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "пользователь",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "Оборудование.Пользователь",
+      "projection": "ПользовательL",
+      "detailModelName": "i-i-s-i-s-s3-оборудование"
+    }
+  ],
+  "external": false,
+  "caption": "Рабочее место",
+  "name": "IISISS3РабочееМестоE",
+  "className": "РабочееМестоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s3-рабочее-место",
+      "modelProjection": "РабочееМестоE"
+    }
+  ]
+}
