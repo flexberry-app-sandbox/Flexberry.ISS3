@@ -23,6 +23,21 @@
           "children": null
         }
       ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s3-пользователь-l",
+          "menuName": null,
+          "caption": "ПользовательL",
+          "title": "Пользователь",
+          "children": null
+        }
+      ]
     }
   ],
   "mobile": true

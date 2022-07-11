@@ -28,12 +28,24 @@ export default Controller.extend({
             link: 'i-i-s-i-s-s3-рабочее-место-l',
             caption: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-рабочее-место-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-рабочее-место-l.title'),
-            icon: 'address card',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-i-s-s3-пользователь-l',
             caption: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-пользователь-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-пользователь-l.title'),
+            icon: 'book',
+            children: null
+          }]
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.справочники.caption'),
+          title: i18n.t('forms.application.sitemap.справочники.title'),
+          children: [{
+            link: 'i-i-s-i-s-s3-пользователь-l',
+            caption: i18n.t('forms.application.sitemap.справочники.i-i-s-i-s-s3-пользователь-l.caption'),
+            title: i18n.t('forms.application.sitemap.справочники.i-i-s-i-s-s3-пользователь-l.title'),
             children: null
           }]
         }
