@@ -4,37 +4,29 @@
   "items": [
     {
       "link": null,
-      "menuName": "i-s-s3",
-      "caption": "ISS3",
-      "title": "ISS3",
+      "menuName": "new-folder1",
+      "caption": "NewFolder1",
+      "title": "NewFolder1",
       "children": [
         {
           "link": "i-i-s-i-s-s3-рабочее-место-l",
           "menuName": null,
-          "caption": "Рабочее место",
-          "title": "",
+          "caption": "РабочееМестоL",
+          "title": "Рабочее место",
           "children": null
         },
         {
           "link": "i-i-s-i-s-s3-пользователь-l",
           "menuName": null,
-          "caption": "Пользователь",
-          "title": "",
-          "children": null
-        }
-      ]
-    },
-    {
-      "link": null,
-      "menuName": "справочники",
-      "caption": "Справочники",
-      "title": "Справочники",
-      "children": [
-        {
-          "link": "i-i-s-i-s-s3-пользователь-l",
-          "menuName": null,
           "caption": "ПользовательL",
           "title": "Пользователь",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s3-тип-l",
+          "menuName": null,
+          "caption": "ТипL",
+          "title": "",
           "children": null
         }
       ]

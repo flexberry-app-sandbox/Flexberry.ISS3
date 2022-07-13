@@ -10,7 +10,7 @@
       "name": "инвНомер",
       "type": "string",
       "flexberryType": "string",
-      "notNull": true,
+      "notNull": false,
       "defaultValue": "",
       "stored": true,
       "ordered": false
@@ -19,7 +19,16 @@
       "name": "кабинет",
       "type": "string",
       "flexberryType": "string",
-      "notNull": true,
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "место",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
       "defaultValue": "",
       "stored": true,
       "ordered": false

@@ -7,6 +7,7 @@ CREATE TABLE Оборудование (
  primaryKey UUID NOT NULL,
  ИнвНомер VARCHAR(255) NOT NULL,
  Наименование VARCHAR(255) NOT NULL,
+ Тип_m0 UUID NOT NULL,
  Пользователь_m0 UUID NOT NULL,
  РабочееМесто_m0 UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -14,14 +15,21 @@ CREATE TABLE Оборудование (
 
 CREATE TABLE РабочееМесто (
  primaryKey UUID NOT NULL,
- ИнвНомер VARCHAR(255) NOT NULL,
- Кабинет VARCHAR(255) NOT NULL,
+ ИнвНомер VARCHAR(255) NULL,
+ Кабинет VARCHAR(255) NULL,
+ Место VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE Пользователь (
  primaryKey UUID NOT NULL,
  ФИО VARCHAR(255) NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Тип (
+ primaryKey UUID NOT NULL,
+ Название VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -128,6 +136,9 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE Оборудование ADD CONSTRAINT FK57746932399e22d42f41e5908da244f0b735ed49 FOREIGN KEY (Тип_m0) REFERENCES Тип; 
+CREATE INDEX Index57746932399e22d42f41e5908da244f0b735ed49 on Оборудование (Тип_m0); 
 
  ALTER TABLE Оборудование ADD CONSTRAINT FK0614b569c3dca1b4e54a6b287dcdf384d2ad66ed FOREIGN KEY (Пользователь_m0) REFERENCES Пользователь; 
 CREATE INDEX Index0614b569c3dca1b4e54a6b287dcdf384d2ad66ed on Оборудование (Пользователь_m0); 

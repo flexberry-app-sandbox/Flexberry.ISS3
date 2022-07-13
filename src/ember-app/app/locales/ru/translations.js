@@ -3,11 +3,14 @@ import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations'
 
 import IISISS3ПользовательLForm from './forms/i-i-s-i-s-s3-пользователь-l';
 import IISISS3РабочееМестоLForm from './forms/i-i-s-i-s-s3-рабочее-место-l';
+import IISISS3ТипLForm from './forms/i-i-s-i-s-s3-тип-l';
 import IISISS3ПользовательEForm from './forms/i-i-s-i-s-s3-пользователь-e';
 import IISISS3РабочееМестоEForm from './forms/i-i-s-i-s-s3-рабочее-место-e';
+import IISISS3ТипEForm from './forms/i-i-s-i-s-s3-тип-e';
 import IISISS3ОборудованиеModel from './models/i-i-s-i-s-s3-оборудование';
 import IISISS3ПользовательModel from './models/i-i-s-i-s-s3-пользователь';
 import IISISS3РабочееМестоModel from './models/i-i-s-i-s-s3-рабочее-место';
+import IISISS3ТипModel from './models/i-i-s-i-s-s3-тип';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -16,7 +19,8 @@ $.extend(true, translations, {
   models: {
     'i-i-s-i-s-s3-оборудование': IISISS3ОборудованиеModel,
     'i-i-s-i-s-s3-пользователь': IISISS3ПользовательModel,
-    'i-i-s-i-s-s3-рабочее-место': IISISS3РабочееМестоModel
+    'i-i-s-i-s-s3-рабочее-место': IISISS3РабочееМестоModel,
+    'i-i-s-i-s-s3-тип': IISISS3ТипModel
   },
 
   'application-name': 'I s s3',
@@ -82,6 +86,22 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
+        'new-folder1': {
+          caption: 'NewFolder1',
+          title: 'NewFolder1',
+          'i-i-s-i-s-s3-рабочее-место-l': {
+            caption: 'РабочееМестоL',
+            title: 'Рабочее место'
+          },
+          'i-i-s-i-s-s3-пользователь-l': {
+            caption: 'ПользовательL',
+            title: 'Пользователь'
+          },
+          'i-i-s-i-s-s3-тип-l': {
+            caption: 'ТипL',
+            title: ''
+          }
+        },
         'i-s-s3': {
           caption: 'ISS3',
           title: 'ISS3',
@@ -115,8 +135,10 @@ $.extend(true, translations, {
     },
     'i-i-s-i-s-s3-пользователь-l': IISISS3ПользовательLForm,
     'i-i-s-i-s-s3-рабочее-место-l': IISISS3РабочееМестоLForm,
+    'i-i-s-i-s-s3-тип-l': IISISS3ТипLForm,
     'i-i-s-i-s-s3-пользователь-e': IISISS3ПользовательEForm,
-    'i-i-s-i-s-s3-рабочее-место-e': IISISS3РабочееМестоEForm
+    'i-i-s-i-s-s3-рабочее-место-e': IISISS3РабочееМестоEForm,
+    'i-i-s-i-s-s3-тип-e': IISISS3ТипEForm
   },
 
 });

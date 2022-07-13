@@ -43,6 +43,8 @@ namespace IIS.ISS3
         
         private string fКабинет;
         
+        private string fМесто;
+        
         private IIS.ISS3.DetailArrayOfОборудование fОборудование;
         
         // *** Start programmer edit section *** (РабочееМесто CustomMembers)
@@ -57,7 +59,6 @@ namespace IIS.ISS3
 
         // *** End programmer edit section *** (РабочееМесто.ИнвНомер CustomAttributes)
         [StrLen(255)]
-        [NotNull()]
         public virtual string ИнвНомер
         {
             get
@@ -90,7 +91,6 @@ namespace IIS.ISS3
 
         // *** End programmer edit section *** (РабочееМесто.Кабинет CustomAttributes)
         [StrLen(255)]
-        [NotNull()]
         public virtual string Кабинет
         {
             get
@@ -113,6 +113,38 @@ namespace IIS.ISS3
                 // *** Start programmer edit section *** (РабочееМесто.Кабинет Set end)
 
                 // *** End programmer edit section *** (РабочееМесто.Кабинет Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Место.
+        /// </summary>
+        // *** Start programmer edit section *** (РабочееМесто.Место CustomAttributes)
+
+        // *** End programmer edit section *** (РабочееМесто.Место CustomAttributes)
+        [StrLen(255)]
+        public virtual string Место
+        {
+            get
+            {
+                // *** Start programmer edit section *** (РабочееМесто.Место Get start)
+
+                // *** End programmer edit section *** (РабочееМесто.Место Get start)
+                string result = this.fМесто;
+                // *** Start programmer edit section *** (РабочееМесто.Место Get end)
+
+                // *** End programmer edit section *** (РабочееМесто.Место Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (РабочееМесто.Место Set start)
+
+                // *** End programmer edit section *** (РабочееМесто.Место Set start)
+                this.fМесто = value;
+                // *** Start programmer edit section *** (РабочееМесто.Место Set end)
+
+                // *** End programmer edit section *** (РабочееМесто.Место Set end)
             }
         }
         

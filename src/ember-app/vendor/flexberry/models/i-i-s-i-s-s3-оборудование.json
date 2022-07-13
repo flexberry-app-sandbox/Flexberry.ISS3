@@ -29,6 +29,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "тип",
+      "relatedTo": "i-i-s-i-s-s3-тип",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "пользователь",
       "relatedTo": "i-i-s-i-s-s3-пользователь",
       "inverse": null

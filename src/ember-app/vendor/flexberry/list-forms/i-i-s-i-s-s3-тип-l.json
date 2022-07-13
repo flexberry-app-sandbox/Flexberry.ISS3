@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-s-s3-тип-e",
+  "editForm": "i-i-s-i-s-s3-тип-e",
+  "external": false,
+  "caption": "",
+  "name": "IISISS3ТипL",
+  "className": "ТипL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s3-тип",
+      "modelProjection": "ТипL"
+    }
+  ]
+}

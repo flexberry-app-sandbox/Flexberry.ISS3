@@ -6,6 +6,7 @@ moduleForModel('i-i-s-i-s-s3-пользователь', 'Unit | Model | i-i-s-i-
     'model:i-i-s-i-s-s3-оборудование',
     'model:i-i-s-i-s-s3-пользователь',
     'model:i-i-s-i-s-s3-рабочее-место',
+    'model:i-i-s-i-s-s3-тип',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

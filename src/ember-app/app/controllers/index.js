@@ -16,30 +16,25 @@ export default Controller.extend({
         }, {
           link: null,
           icon: 'list',
-          caption: i18n.t('forms.application.sitemap.i-s-s3.caption'),
-          title: i18n.t('forms.application.sitemap.i-s-s3.title'),
+          caption: i18n.t('forms.application.sitemap.new-folder1.caption'),
+          title: i18n.t('forms.application.sitemap.new-folder1.title'),
           children: [{
             link: 'i-i-s-i-s-s3-рабочее-место-l',
-            caption: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-рабочее-место-l.caption'),
-            title: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-рабочее-место-l.title'),
-            icon: 'edit',
+            caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-рабочее-место-l.caption'),
+            title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-рабочее-место-l.title'),
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-i-s-s3-пользователь-l',
-            caption: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-пользователь-l.caption'),
-            title: i18n.t('forms.application.sitemap.i-s-s3.i-i-s-i-s-s3-пользователь-l.title'),
-            icon: 'book',
+            caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-пользователь-l.caption'),
+            title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-пользователь-l.title'),
+            icon: 'table',
             children: null
-          }]
-        }, {
-          link: null,
-          icon: 'list',
-          caption: i18n.t('forms.application.sitemap.справочники.caption'),
-          title: i18n.t('forms.application.sitemap.справочники.title'),
-          children: [{
-            link: 'i-i-s-i-s-s3-пользователь-l',
-            caption: i18n.t('forms.application.sitemap.справочники.i-i-s-i-s-s3-пользователь-l.caption'),
-            title: i18n.t('forms.application.sitemap.справочники.i-i-s-i-s-s3-пользователь-l.title'),
+          }, {
+            link: 'i-i-s-i-s-s3-тип-l',
+            caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-тип-l.caption'),
+            title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-тип-l.title'),
+            icon: 'edit',
             children: null
           }]
         }

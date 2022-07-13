@@ -11,6 +11,8 @@ CREATE TABLE "Оборудование"
 
 	"Наименование" NVARCHAR2(255) NOT NULL,
 
+	"Тип_m0" RAW(16) NOT NULL,
+
 	"Пользователь_m0" RAW(16) NOT NULL,
 
 	"РабочееМесто_m0" RAW(16) NOT NULL,
@@ -24,9 +26,11 @@ CREATE TABLE "РабочееМесто"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"ИнвНомер" NVARCHAR2(255) NOT NULL,
+	"ИнвНомер" NVARCHAR2(255) NULL,
 
-	"Кабинет" NVARCHAR2(255) NOT NULL,
+	"Кабинет" NVARCHAR2(255) NULL,
+
+	"Место" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -38,6 +42,17 @@ CREATE TABLE "Пользователь"
 	"primaryKey" RAW(16) NOT NULL,
 
 	"ФИО" NVARCHAR2(255) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Тип"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Название" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -240,6 +255,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "Оборудование"
+	ADD CONSTRAINT "Оборудование__5552" FOREIGN KEY ("Тип_m0") REFERENCES "Тип" ("primaryKey");
+
+CREATE INDEX "Оборудование__4422" on "Оборудование" ("Тип_m0");
 
 ALTER TABLE "Оборудование"
 	ADD CONSTRAINT "Оборудование__5873" FOREIGN KEY ("Пользователь_m0") REFERENCES "Пользователь" ("primaryKey");

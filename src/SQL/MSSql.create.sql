@@ -10,6 +10,8 @@ CREATE TABLE [Оборудование] (
 
 	 [Наименование] VARCHAR(255)  NOT NULL,
 
+	 [Тип_m0] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [Пользователь_m0] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [РабочееМесто_m0] UNIQUEIDENTIFIER  NOT NULL,
@@ -21,9 +23,11 @@ CREATE TABLE [РабочееМесто] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [ИнвНомер] VARCHAR(255)  NOT NULL,
+	 [ИнвНомер] VARCHAR(255)  NULL,
 
-	 [Кабинет] VARCHAR(255)  NOT NULL,
+	 [Кабинет] VARCHAR(255)  NULL,
+
+	 [Место] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
@@ -33,6 +37,15 @@ CREATE TABLE [Пользователь] (
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [ФИО] VARCHAR(255)  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Тип] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Название] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
@@ -217,6 +230,9 @@ CREATE TABLE [ApplicationLog] (
 
 
 
+
+ ALTER TABLE [Оборудование] ADD CONSTRAINT [Оборудование_FТип_0] FOREIGN KEY ([Тип_m0]) REFERENCES [Тип]
+CREATE INDEX Оборудование_IТип_m0 on [Оборудование] ([Тип_m0])
 
  ALTER TABLE [Оборудование] ADD CONSTRAINT [Оборудование_FПользователь_0] FOREIGN KEY ([Пользователь_m0]) REFERENCES [Пользователь]
 CREATE INDEX Оборудование_IПользователь_m0 on [Оборудование] ([Пользователь_m0])

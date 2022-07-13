@@ -44,6 +44,8 @@ namespace IIS.ISS3
         
         private IIS.ISS3.Пользователь fПользователь;
         
+        private IIS.ISS3.Тип fТип;
+        
         private IIS.ISS3.РабочееМесто fРабочееМесто;
         
         // *** Start programmer edit section *** (Оборудование CustomMembers)
@@ -146,6 +148,38 @@ namespace IIS.ISS3
                 // *** Start programmer edit section *** (Оборудование.Пользователь Set end)
 
                 // *** End programmer edit section *** (Оборудование.Пользователь Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Оборудование.
+        /// </summary>
+        // *** Start programmer edit section *** (Оборудование.Тип CustomAttributes)
+
+        // *** End programmer edit section *** (Оборудование.Тип CustomAttributes)
+        [NotNull()]
+        public virtual IIS.ISS3.Тип Тип
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Оборудование.Тип Get start)
+
+                // *** End programmer edit section *** (Оборудование.Тип Get start)
+                IIS.ISS3.Тип result = this.fТип;
+                // *** Start programmer edit section *** (Оборудование.Тип Get end)
+
+                // *** End programmer edit section *** (Оборудование.Тип Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Оборудование.Тип Set start)
+
+                // *** End programmer edit section *** (Оборудование.Тип Set start)
+                this.fТип = value;
+                // *** Start programmer edit section *** (Оборудование.Тип Set end)
+
+                // *** End programmer edit section *** (Оборудование.Тип Set end)
             }
         }
         
