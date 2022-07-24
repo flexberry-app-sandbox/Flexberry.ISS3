@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-i-s-s3-рабочее-место-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-рабочее-место-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-рабочее-место-l.title'),
-            icon: 'tags',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-i-s-s3-пользователь-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-пользователь-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-пользователь-l.title'),
-            icon: 'table',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-i-s-s3-тип-l',
             caption: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-тип-l.caption'),
             title: i18n.t('forms.application.sitemap.new-folder1.i-i-s-i-s-s3-тип-l.title'),
-            icon: 'edit',
+            icon: 'folder open',
             children: null
           }]
         }
